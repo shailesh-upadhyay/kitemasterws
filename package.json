@@ -1,6 +1,6 @@
 {
   "name": "kitemasterws",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Client websocket package that has sub and unsub functionality & receives data from master kite websocket",
   "main": "index.js",
   "scripts": {
