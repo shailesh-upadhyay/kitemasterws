@@ -1,0 +1,36 @@
+{
+  "name": "kitemasterws",
+  "version": "1.0.0",
+  "description": "Master Websocket connection that has sub and unsub functionality & sends data downstream to clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shailesh-upadhyay/kitemasterws.git"
+  },
+  "keywords": [
+    "kite",
+    "websocket",
+    "real-time",
+    "communication",
+    "pubsub",
+    "messaging",
+    "client",
+    "server",
+    "event-driven",
+    "javascript",
+    "nodejs",
+    "magikos"
+  ],
+  "author": "Shailesh Upadhyay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shailesh-upadhyay/kitemasterws/issues"
+  },
+  "homepage": "https://github.com/shailesh-upadhyay/kitemasterws#readme",
+  "dependencies": {
+    "ws": "^8.14.2"
+  }
+}
