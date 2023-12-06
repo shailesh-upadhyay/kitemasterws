@@ -1,7 +1,7 @@
 {
   "name": "kitemasterws",
   "version": "1.0.0",
-  "description": "Master Websocket connection that has sub and unsub functionality & sends data downstream to clients",
+  "description": "Client websocket package that has sub and unsub functionality & receives data from master kite websocket",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
