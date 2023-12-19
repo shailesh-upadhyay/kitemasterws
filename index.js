@@ -34,13 +34,29 @@ class MasterWsClient {
 
 	handleOpen() {
 		console.log("Connected to master ws server");
+		this.setupPing();
 		if (this.events.subscribe) {
 			this.events.subscribe();
 		}
 	}
 
+	setupPing() {
+		// Send ping every 30 seconds
+		this.pingInterval = setInterval(() => {
+			if (this.ws.readyState === WebSocket.OPEN) {
+				this.ws.ping();
+			}
+		}, 30000);
+
+		// Handle pong response
+		this.ws.on("pong", () => {
+			// Pong received, connection is alive
+		});
+	}
+
 	handleClose() {
 		console.log("Disconnected from master ws server");
+		clearInterval(this.pingInterval);
 	}
 
 	handleMessage(data) {
