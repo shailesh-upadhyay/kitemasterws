@@ -4,6 +4,7 @@ class MasterWsClient {
 	constructor(url, botName, maxReconnectAttempts = 5, reconnectDelay = 5000) {
 		this.url = url;
 		this.maxReconnectAttempts = maxReconnectAttempts;
+		this.reconnectAttempts = 0;
 		this.reconnectDelay = reconnectDelay;
 		this.botName = botName;
 		this.connect();
